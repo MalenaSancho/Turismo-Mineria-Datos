@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_715542f143d41d60e9a4febed04b5071 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_715542f143d41d60e9a4febed04b5071" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_715542f143d41d60e9a4febed04b5071 = L.map(
+                "map_715542f143d41d60e9a4febed04b5071",
+                {
+                    center: [37.97, -0.69],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79d922d8f41e3810695f3d26060fb1e7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_79d922d8f41e3810695f3d26060fb1e7.addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var circle_marker_0e34578f7ea1b19fbe8d98ac7afe3e37 = L.circleMarker(
+                [37.984, -0.6833],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800026", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 1}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+        var popup_1dda761a838c604a999b6c806b40965f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_422ccc4eba470860c3e26a3a520c1222 = $(`<div id="html_422ccc4eba470860c3e26a3a520c1222" style="width: 100.0%; height: 100.0%;"><b>Centro</b><br>CP 03180<br>5817 VUTs</div>`)[0];
+                popup_1dda761a838c604a999b6c806b40965f.setContent(html_422ccc4eba470860c3e26a3a520c1222);
+            
+        
+
+        circle_marker_0e34578f7ea1b19fbe8d98ac7afe3e37.bindPopup(popup_1dda761a838c604a999b6c806b40965f)
+        ;
+
+        
+    
+    
+            circle_marker_0e34578f7ea1b19fbe8d98ac7afe3e37.bindTooltip(
+                `<div>
+                     <b>Centro</b><br>CP: 03180<br>VUT: 5817 (60.01%)<br>Total plazas: 22386<br>Media plazas: 3.8<br>Media superficie: 70.1 m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_edf3a929c865f528c3067f4091b58c71 = L.marker(
+                [37.984, -0.6833],
+                {
+}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var div_icon_8d72f51754a1240e45db3999ffbf5e2b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; font-weight:bold; color:black; text-align:center; white-space:nowrap;\"\u003e03180\u003cbr\u003e(5817)\u003c/div\u003e",
+  "iconSize": [60, 30],
+  "iconAnchor": [30, 15],
+  "className": "empty",
+});
+        
+    
+                marker_edf3a929c865f528c3067f4091b58c71.setIcon(div_icon_8d72f51754a1240e45db3999ffbf5e2b);
+            
+    
+            var circle_marker_fc81c0dbd840da77fc8bc08182ebc1b4 = L.circleMarker(
+                [37.97, -0.695],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb9c", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 1}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+        var popup_1b37d5a4e1c1af26b16759aaea24cc5f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_54a1044f336e95b6cf50ed4032477117 = $(`<div id="html_54a1044f336e95b6cf50ed4032477117" style="width: 100.0%; height: 100.0%;"><b>La Veleta / Acequión</b><br>CP 03185<br>925 VUTs</div>`)[0];
+                popup_1b37d5a4e1c1af26b16759aaea24cc5f.setContent(html_54a1044f336e95b6cf50ed4032477117);
+            
+        
+
+        circle_marker_fc81c0dbd840da77fc8bc08182ebc1b4.bindPopup(popup_1b37d5a4e1c1af26b16759aaea24cc5f)
+        ;
+
+        
+    
+    
+            circle_marker_fc81c0dbd840da77fc8bc08182ebc1b4.bindTooltip(
+                `<div>
+                     <b>La Veleta / Acequión</b><br>CP: 03185<br>VUT: 925 (9.54%)<br>Total plazas: 3983<br>Media plazas: 4.3<br>Media superficie: 90.5 m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_28c24d67452f0a3925cf1b202843a539 = L.marker(
+                [37.97, -0.695],
+                {
+}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var div_icon_cf821ea0ac8bdd9419788c1a2bb1097b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; font-weight:bold; color:black; text-align:center; white-space:nowrap;\"\u003e03185\u003cbr\u003e(925)\u003c/div\u003e",
+  "iconSize": [60, 30],
+  "iconAnchor": [30, 15],
+  "className": "empty",
+});
+        
+    
+                marker_28c24d67452f0a3925cf1b202843a539.setIcon(div_icon_cf821ea0ac8bdd9419788c1a2bb1097b);
+            
+    
+            var circle_marker_ff9b8b889bbe5c1a28a7b9a75f6eeadf = L.circleMarker(
+                [37.9996, -0.6543],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb9c", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 1}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+        var popup_4c45e57c999d2d48fbae49acb652d033 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2821e743533b9fd5c20dbf1dae71756f = $(`<div id="html_2821e743533b9fd5c20dbf1dae71756f" style="width: 100.0%; height: 100.0%;"><b>Cabo Cervera</b><br>CP 03183<br>919 VUTs</div>`)[0];
+                popup_4c45e57c999d2d48fbae49acb652d033.setContent(html_2821e743533b9fd5c20dbf1dae71756f);
+            
+        
+
+        circle_marker_ff9b8b889bbe5c1a28a7b9a75f6eeadf.bindPopup(popup_4c45e57c999d2d48fbae49acb652d033)
+        ;
+
+        
+    
+    
+            circle_marker_ff9b8b889bbe5c1a28a7b9a75f6eeadf.bindTooltip(
+                `<div>
+                     <b>Cabo Cervera</b><br>CP: 03183<br>VUT: 919 (9.48%)<br>Total plazas: 3778<br>Media plazas: 4.1<br>Media superficie: 76.5 m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fa7404e6cc5f3463346b638eba42932e = L.marker(
+                [37.9996, -0.6543],
+                {
+}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var div_icon_1f7437f37ade7870c83b6e286e117cbb = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; font-weight:bold; color:black; text-align:center; white-space:nowrap;\"\u003e03183\u003cbr\u003e(919)\u003c/div\u003e",
+  "iconSize": [60, 30],
+  "iconAnchor": [30, 15],
+  "className": "empty",
+});
+        
+    
+                marker_fa7404e6cc5f3463346b638eba42932e.setIcon(div_icon_1f7437f37ade7870c83b6e286e117cbb);
+            
+    
+            var circle_marker_1251617b680790364e9408a73a9830ee = L.circleMarker(
+                [37.9798, -0.67168],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffefa5", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+        var popup_e4a3bb0c14399977edf3abeb5ebdc7ad = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d387aa01e7d4880bd0d1fca6f3741fb2 = $(`<div id="html_d387aa01e7d4880bd0d1fca6f3741fb2" style="width: 100.0%; height: 100.0%;"><b>La Siesta</b><br>CP 03182<br>776 VUTs</div>`)[0];
+                popup_e4a3bb0c14399977edf3abeb5ebdc7ad.setContent(html_d387aa01e7d4880bd0d1fca6f3741fb2);
+            
+        
+
+        circle_marker_1251617b680790364e9408a73a9830ee.bindPopup(popup_e4a3bb0c14399977edf3abeb5ebdc7ad)
+        ;
+
+        
+    
+    
+            circle_marker_1251617b680790364e9408a73a9830ee.bindTooltip(
+                `<div>
+                     <b>La Siesta</b><br>CP: 03182<br>VUT: 776 (8.0%)<br>Total plazas: 2881<br>Media plazas: 3.7<br>Media superficie: 66.9 m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cf73823ad55f30ddd4f31d06a2a08912 = L.marker(
+                [37.9798, -0.67168],
+                {
+}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var div_icon_6a3f1f9eb7121377b3d336b5dcb41feb = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; font-weight:bold; color:black; text-align:center; white-space:nowrap;\"\u003e03182\u003cbr\u003e(776)\u003c/div\u003e",
+  "iconSize": [60, 30],
+  "iconAnchor": [30, 15],
+  "className": "empty",
+});
+        
+    
+                marker_cf73823ad55f30ddd4f31d06a2a08912.setIcon(div_icon_6a3f1f9eb7121377b3d336b5dcb41feb);
+            
+    
+            var circle_marker_0383c7872b7eb7b17982bf09b9c1b65f = L.circleMarker(
+                [38.01812, -0.65637],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff5b5", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 1}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+        var popup_70756c327667f33717edb9ab14341997 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5b65a83aa5ba580b3e7286514e205f33 = $(`<div id="html_5b65a83aa5ba580b3e7286514e205f33" style="width: 100.0%; height: 100.0%;"><b>La Mata</b><br>CP 03188<br>530 VUTs</div>`)[0];
+                popup_70756c327667f33717edb9ab14341997.setContent(html_5b65a83aa5ba580b3e7286514e205f33);
+            
+        
+
+        circle_marker_0383c7872b7eb7b17982bf09b9c1b65f.bindPopup(popup_70756c327667f33717edb9ab14341997)
+        ;
+
+        
+    
+    
+            circle_marker_0383c7872b7eb7b17982bf09b9c1b65f.bindTooltip(
+                `<div>
+                     <b>La Mata</b><br>CP: 03188<br>VUT: 530 (5.47%)<br>Total plazas: 2059<br>Media plazas: 3.9<br>Media superficie: 68.0 m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d8f7db05a6d512545df8c77e63efd515 = L.marker(
+                [38.01812, -0.65637],
+                {
+}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var div_icon_84d8c463a90ab6c49e9c73c2384c24dc = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; font-weight:bold; color:black; text-align:center; white-space:nowrap;\"\u003e03188\u003cbr\u003e(530)\u003c/div\u003e",
+  "iconSize": [60, 30],
+  "iconAnchor": [30, 15],
+  "className": "empty",
+});
+        
+    
+                marker_d8f7db05a6d512545df8c77e63efd515.setIcon(div_icon_84d8c463a90ab6c49e9c73c2384c24dc);
+            
+    
+            var circle_marker_60f4ed6093f01617f350ff82f3bad175 = L.circleMarker(
+                [37.978, -0.6854],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffbc2", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 1}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+        var popup_7cb0ae2e748e4b46597068a59d12baf5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fb223136958810883e2a597e22f3fc3c = $(`<div id="html_fb223136958810883e2a597e22f3fc3c" style="width: 100.0%; height: 100.0%;"><b>Casco Antiguo</b><br>CP 03181<br>305 VUTs</div>`)[0];
+                popup_7cb0ae2e748e4b46597068a59d12baf5.setContent(html_fb223136958810883e2a597e22f3fc3c);
+            
+        
+
+        circle_marker_60f4ed6093f01617f350ff82f3bad175.bindPopup(popup_7cb0ae2e748e4b46597068a59d12baf5)
+        ;
+
+        
+    
+    
+            circle_marker_60f4ed6093f01617f350ff82f3bad175.bindTooltip(
+                `<div>
+                     <b>Casco Antiguo</b><br>CP: 03181<br>VUT: 305 (3.15%)<br>Total plazas: 1188<br>Media plazas: 3.9<br>Media superficie: 73.6 m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e64dd45530fc029c26db195fb0d3584a = L.marker(
+                [37.978, -0.6854],
+                {
+}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var div_icon_7697df487a4fab9ff5568ef49d307a99 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; font-weight:bold; color:black; text-align:center; white-space:nowrap;\"\u003e03181\u003cbr\u003e(305)\u003c/div\u003e",
+  "iconSize": [60, 30],
+  "iconAnchor": [30, 15],
+  "className": "empty",
+});
+        
+    
+                marker_e64dd45530fc029c26db195fb0d3584a.setIcon(div_icon_7697df487a4fab9ff5568ef49d307a99);
+            
+    
+            var circle_marker_c65fa12caf37e09c82c8715d22f0f59f = L.circleMarker(
+                [38.0109, -0.695028],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffbc2", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 1}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+        var popup_cff5fd654de79aac3f6f0208f09a3ace = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_425796155315977c351017ef211ca5f6 = $(`<div id="html_425796155315977c351017ef211ca5f6" style="width: 100.0%; height: 100.0%;"><b>El Chaparral</b><br>CP 03184<br>290 VUTs</div>`)[0];
+                popup_cff5fd654de79aac3f6f0208f09a3ace.setContent(html_425796155315977c351017ef211ca5f6);
+            
+        
+
+        circle_marker_c65fa12caf37e09c82c8715d22f0f59f.bindPopup(popup_cff5fd654de79aac3f6f0208f09a3ace)
+        ;
+
+        
+    
+    
+            circle_marker_c65fa12caf37e09c82c8715d22f0f59f.bindTooltip(
+                `<div>
+                     <b>El Chaparral</b><br>CP: 03184<br>VUT: 290 (2.99%)<br>Total plazas: 1379<br>Media plazas: 4.8<br>Media superficie: 92.3 m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7643a92cd9f77d6dea0d227184c29aa3 = L.marker(
+                [38.0109, -0.695028],
+                {
+}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var div_icon_71a8543bfd3cf0af99681dcc82767d5b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; font-weight:bold; color:black; text-align:center; white-space:nowrap;\"\u003e03184\u003cbr\u003e(290)\u003c/div\u003e",
+  "iconSize": [60, 30],
+  "iconAnchor": [30, 15],
+  "className": "empty",
+});
+        
+    
+                marker_7643a92cd9f77d6dea0d227184c29aa3.setIcon(div_icon_71a8543bfd3cf0af99681dcc82767d5b);
+            
+    
+            var circle_marker_6b443b9486983cb2f072a1cffe4b34de = L.circleMarker(
+                [37.96101, -0.72763],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+        var popup_dd85381b582d6e972fabb43a0eea552a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_89b3241925f45b6b3614ebeaa2debbd5 = $(`<div id="html_89b3241925f45b6b3614ebeaa2debbd5" style="width: 100.0%; height: 100.0%;"><b>Los Balcones / Los Altos</b><br>CP 03186<br>132 VUTs</div>`)[0];
+                popup_dd85381b582d6e972fabb43a0eea552a.setContent(html_89b3241925f45b6b3614ebeaa2debbd5);
+            
+        
+
+        circle_marker_6b443b9486983cb2f072a1cffe4b34de.bindPopup(popup_dd85381b582d6e972fabb43a0eea552a)
+        ;
+
+        
+    
+    
+            circle_marker_6b443b9486983cb2f072a1cffe4b34de.bindTooltip(
+                `<div>
+                     <b>Los Balcones / Los Altos</b><br>CP: 03186<br>VUT: 132 (1.36%)<br>Total plazas: 708<br>Media plazas: 5.4<br>Media superficie: 157.4 m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_365944ac0e7c44c20a424b15404ef287 = L.marker(
+                [37.96101, -0.72763],
+                {
+}
+            ).addTo(map_715542f143d41d60e9a4febed04b5071);
+        
+    
+            var div_icon_2dc515f7fe6086805febb21548d30df4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:9px; font-weight:bold; color:black; text-align:center; white-space:nowrap;\"\u003e03186\u003cbr\u003e(132)\u003c/div\u003e",
+  "iconSize": [60, 30],
+  "iconAnchor": [30, 15],
+  "className": "empty",
+});
+        
+    
+                marker_365944ac0e7c44c20a424b15404ef287.setIcon(div_icon_2dc515f7fe6086805febb21548d30df4);
+            
+</script>
+</html>
