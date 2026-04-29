@@ -35,8 +35,7 @@ El trabajo se estructura en cuatro retos independientes pero encadenados que, ju
 
 **Pregunta**: ¿Cuánta gente hay *realmente* en Torrevieja en cada momento, más allá del padrón?
 
-Estima la **población efectiva** (empadronada + flotante) cruzando padrón INE, censo PEGV, datos de telefonía móvil del INE (turismo emisor/receptor/interno) y consumo eléctrico residencial. Genera las series limpias [poblacion_efectiva_torrevieja.csv](DATASETS/RETO%201/DATASETS%20MODIFICADOS/poblacion_efectiva_torrevieja.csv), [poblacion_flotante_base.csv](DATASETS/RETO%201/DATASETS%20MODIFICADOS/poblacion_flotante_base.csv) y los desgloses por origen ([interno_torrevieja_limpio.csv](DATASETS/RETO%201/DATASETS%20MODIFICADOS/interno_torrevieja_limpio.csv), [emisor_torrevieja_limpio.csv](DATASETS/RETO%201/DATASETS%20MODIFICADOS/emisor_torrevieja_limpio.csv), [receptor_torrevieja_limpio.csv](DATASETS/RETO%201/DATASETS%20MODIFICADOS/receptor_torrevieja_limpio.csv)) que alimentan los retos 2, 3 y 4.
-
+Estima la **población efectiva** (empadronada + flotante) cruzando el censo PEGV, con los datos de telefonía móvil del INE (turismo emisor/receptor/interno) y valida estos datos con el consumo eléctrico residencial y los indices de ocupacion. Se genera el dataset limpio [poblacion_efectiva_torrevieja.csv](DATASETS/RETO%201/DATASETS%20MODIFICADOS/poblacion_efectiva_torrevieja.csv). 
 ### [RETO 2 — Estacionalidad](RETOS/RETO_2.ipynb)
 
 **Pregunta**: ¿Qué tan estacional es Torrevieja y por qué?
