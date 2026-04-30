@@ -88,7 +88,7 @@ Orden recomendado de lectura: **1 → 2 → 3 → 4**. El RETO 2 reutiliza salid
 
 ## Documento final
 
-[Informe final.docx](Informe%20final.docx) recoge la memoria escrita con metodología, resultados consolidados y conclusiones de los cuatro retos.
+[Informe_completo.pdf](Informe%20completo.pdf)  recoge la memoria escrita con metodología, resultados consolidados y conclusiones de los cuatro retos.
 
 ## AUTORES
 
